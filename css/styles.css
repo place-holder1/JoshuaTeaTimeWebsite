@@ -1,6 +1,7 @@
 :root{
     --studio-color: #141F25;
     --studio-color2: #C39544;
+    --studio-color3: #0a0e10;
     --gap: 2rem;
     font-family: monospace;
 }
@@ -19,6 +20,10 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 16px;
 }
 
+div {
+    display: block;
+}
+
 /* CSS SYSTEMS */
 
 .wrapper {
@@ -27,16 +32,40 @@ h1, h2, h3, h4, h5, h6, p {
     left: 0;
 }
 
+/* Alternatively */
+
+/* .wrapper {
+    max-width: min(90%, 1200px);
+    margin: 0 auto;
+} */
+
 .container {
     margin: 0 auto;
     width: 100%;
     max-width: 1024px;
 }
 
+.line-break {
+    height: 1px;
+    background-color: aqua;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.center {
+    text-align: center;
+}
+
+* {
+    color: rgb(74, 74, 154);
+}
+
 /* TOP NAV CONTENT */
 
 #top-header {
-    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: var(--studio-color2);
     display: flex;
     flex-direction: column;
@@ -44,17 +73,40 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: center;
 }
 
-#logo {
+#studio-logo {
     height: 10rem;
     width: auto;
     margin-bottom: 1rem;
     display: block;
 }
 
+#logo {
+    height: 5rem;
+    width: auto;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    text-align: center;
+}
+
 #navHeader {
     display: flex;
     gap: 2rem;
+    /* grid-template-columns: 3; */
 }
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 1rem;
+}
+
 
 #navHeader a {
     color: white;
@@ -66,4 +118,36 @@ h1, h2, h3, h4, h5, h6, p {
 
 #navHeader a:hover {
     color: #ff79c6;
+}
+
+/* MAIN CONTENT */
+
+#main-container {
+    min-height: 1000px;
+}
+
+#video-test {
+    background-color: rgb(112, 77, 77);
+    height: 600px;
+}
+
+.even {
+    background-color: var(--studio-color3);
+}
+
+/* FOOTER CONTENT */
+
+footer {
+    width: 100%;
+    background-color: var(--studio-color2);
+}
+
+#footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-inner {
+    padding: 4rem;
 }
