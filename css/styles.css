@@ -141,7 +141,7 @@ nav ul li {
 /* MAIN CONTENT */
 
 #main-container {
-    min-height: 1000px;
+    min-height: 1200px;
 }
 
 #logoFirst {
@@ -191,6 +191,7 @@ figcaption p {
     height: 200px;
     width: 100%;
     object-fit: cover;
+    margin: 1rem;
     /* padding-bottom: 1rem; */
     border-radius: 4rem;
     border: 4px solid black;
@@ -198,8 +199,18 @@ figcaption p {
 
 /* TEAM CONTENT */
 
+#our-story {
+    font-size: 4rem;
+    padding: 4rem;
+}
+
+#story-p {
+    font-size: 2rem;
+}
+
+
 #meet-the-team {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .team-grid {
