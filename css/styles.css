@@ -32,6 +32,10 @@ div {
     margin: 0 auto;
 }
 
+.spacing {
+    /* margin-bottom: 14rem; */
+}
+
 /* Alternatively */
 
 /* .wrapper {
@@ -155,17 +159,13 @@ nav ul li {
     margin: 2rem;
 }
 
-#video-test {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    margin-bottom: 2rem;
-}
-
 #video-test video {
     width: 100%;
     height: 80%;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     display: block;
+    margin-bottom: 4rem;
 }
 
 figcaption p {
@@ -184,6 +184,7 @@ figcaption p {
     grid-template-columns: repeat(4, 1fr);
     gap: .5rem;
     justify-items: center;
+    margin-bottom: 2rem;
 }
 
 .showcase-gallery img {
@@ -193,7 +194,7 @@ figcaption p {
     object-fit: cover;
     margin: 1rem;
     /* padding-bottom: 1rem; */
-    border-radius: 4rem;
+    border-radius: 2rem;
     border: 4px solid black;
 }
 
@@ -201,13 +202,16 @@ figcaption p {
 
 #our-story {
     font-size: 4rem;
-    padding: 4rem;
+    padding: 2rem;
 }
 
 #story-p {
     font-size: 2rem;
 }
 
+.section-header {
+    margin-bottom: 2rem;
+}
 
 #meet-the-team {
     font-size: 4rem;
@@ -219,6 +223,7 @@ figcaption p {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     padding: 0;
+    margin-bottom: 4rem;
 }
 
 .team-member {
