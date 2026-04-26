@@ -8,55 +8,37 @@
 </head>
 <body>
     <header id="top-header">
-        <img src="images/Logo.png" alt="test" id="logo">
-        <nav id="navHeader" class="">
-            <div class="">
+        <div id="header-inner">
+            <img src="images/Logo.png" alt="test" id="logo">
+
+            <nav id="navHeader">
                 <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="team.html">About</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="main-container" class="container">
-            
-            <header id="firstThing" class="center">
-                <!-- <img id="logoFirst" src="images/Logo.png" alt="Studio logo"> -->
-            </header>
-
-            <section> <!-- ODD -->
-                <div class="wrapper">
+            <section class="wrapper">
+                <div>
                     <figure id="video-test">
-                        <video controls>
-                            <source src="final_ani_renders.mp4" type="video/mp4">
+                        <video autoplay muted loop playsinline>
+                            <source src="AnimayhemRenders.mov" type="video/mp4">
                         </video>
 
-                    <!-- <iframe 
-                        src="https://player.vimeo.com/video/1179947944?autoplay=1&muted=1&loop=1&background=0"
-                        width="1280" 
-                        height="800" 
-                        frameborder="0" 
-                        allow="fullscreen; picture-in-picture"
-                        allowfullscreen>
-                    </iframe> -->
-                        
                         <!-- <figcaption>
 
                         </figcaption> -->
                     </figure>
                 </div>
+                <div class="line-break"></div>
             </section>
 
-            <!-- <section>
-                <div class="wrapper">
+            <section class="wrapper">
+                <div>
                     <p style="font-size: 2rem; text-align: center;">
                     A bat wielding zombie slayer and a curious tech prodigy uncover a hidden mech in an abandoned arcade, only to discover a sinister force watching their every move. 
                         <br><br>
@@ -67,12 +49,13 @@
                     Directed by Joshua Boone, Animayhem releases on May 1st, 2026 
                     </p>
                 </div>
-            </section> -->
+                <div class="line-break"></div>
+            </section>
 
-            <section class="odd">
-                <div class="wrapper">
+
+            <section class="wrapper odd">
                     <header id="showText" class="center">
-                        <h2>Current Artworks</h2>
+                        <h1>Current Artworks</h1>
                     </header>
 
                     <section class="showcase-gallery" aria-label="Artwork">
@@ -93,13 +76,110 @@
                         <img src="images/artwork/graffiti.png" alt="Graffiti">
                         <img src="images/artwork/jackpot.png" alt="Jackpot">
                     </section>
-                </div>
-            </section>
+                    <div class="line-break"></div>
+                </section>
         </section>
 
-        <section class="odd">
-            <div class="wrapper">
+        <!-- TEAM -->
 
+        <section class="wrapper">
+            <h1 class="center" id="team">Meet the Team!</h1>
+            <ul class="team-grid">
+                <li class="team-member">
+                    <img src="images/team/joshua.png" alt="Joshua Boone">
+                    <h2>Joshua Boone</h2>
+                    <p>Creative Director & Animator</p>
+                </li>
+
+                <li class="team-member">
+                    <img src="images/team/sam.png" alt="Sam Johnson">
+                    <h2>Sam Johnson</h2>
+                    <p>Technical Director & FX Artist</p>
+                </li>
+
+                <li class="team-member">
+                    <img src="images/team/matt.png" alt="Matt Ma">
+                    <h2>Matt Ma</h2>
+                    <p>3D Environment Artist</p>
+                </li>
+
+                <li class="team-member">
+                    <img src="images/team/alexia.png" alt="Alexia Gil">
+                    <h2>Alexia Gil</h2>
+                    <p>3D Environment Artist</p>
+                </li>
+
+                <li class="team-member">
+                    <img src="images/team/spencer.png" alt="Spencer Burse">
+                    <h2>Spencer Burse</h2>
+                    <p>Project Manager</p>
+                </li>
+
+                <li class="team-member">
+                    <img src="images/team/grace.png" alt="Grace Yuhas">
+                    <h2>Grace Yuhas</h2>
+                    <p>Storyboard Artist</p>
+                </li>
+
+                <li class="team-member">
+                    <img src="images/team/peyton.png" alt="Peyton Hadley">
+                    <h2>Peyton Hadley</h2>
+                    <p>Concept Artist</p>
+                </li>
+
+                <li class="team-member">
+                    <img src="images/team/miya.png" alt="Miya Yoon">
+                    <h2>Miya Yoon</h2>
+                    <p>SFX Artist</p>
+                </li>
+
+                <li class="team-member">
+                    <img src="images/team/mac.png" alt="Mac Clifton">
+                    <h2>Mac Clifton</h2>
+                    <p>Lighting Artist</p>
+                </li>
+
+                <li class="team-member">
+                    <img src="images/team/tanishka.jpg" alt="Tanishka Kulkarni">
+                    <h2>Tanishka Kulkarni</h2>
+                    <p>Project Coordinator</p>
+                </li>
+            </ul>
+            <div class="line-break"></div>
+        </section>
+
+        <!-- CONTACT -->
+
+        <section id="contact-section">
+            <div class="wrapper">
+                <h1>Contact Us</h1>
+                <p>If you have any questions, feel free to reach out!</p>
+
+                <form action="#" method="post">
+                    <div>
+                        <label for="name">Full Name</label><br>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="subject">Subject</label><br>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+
+                    <div>
+                        <label for="message">Message</label><br>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

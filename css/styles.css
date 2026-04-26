@@ -1,18 +1,34 @@
 :root{
-    --studio-color: #2D232E;
-    --studio-color2: #534B52;
+    --studio-color: #ffffff;
+    --studio-color2: #eceaec;
     --studio-color3: #474448;
+    --text:#000000
+
+    --black-version: #
     --gap: 2rem;
     font-family: monospace;
+}
+
+/* PATRICK HAND FONT FROM GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --studio-color: #121212;
+    --studio-color2: #2a2a2e;
+    --studio-color3: #e0dde1;
+    --text:#ffffff;
+  }
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
-    color:#eaeaea;
+    font-family: 'Patrick Hand', cursive;
+    color: var(--text);
 }
+
 html, body {
     height: 100%;
     background-color: var(--studio-color);
@@ -63,9 +79,11 @@ h2 {
 }
 
 .line-break {
-    height: 1px;
+    height: 4px;
     width: 100%;
+    margin-top: 4rem;
     margin-bottom: 4rem;
+    background-color: var(--studio-color2);
 }
 
 .center {
@@ -78,74 +96,61 @@ h2 {
 
 /* TOP NAV CONTENT */
 
+#top-header {
+    width: 100%;
+    background-color: var(--studio-color2);
 
-nav {
-    position: relative;
     display: flex;
-    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    max-width: 1920px;
+    width: 100%;
 }
 
 nav ul {
-    text-align: center;
-}
-
-#navHeader {
     display: flex;
-    gap: 2rem;
-    /* grid-template-columns: 3; */
-}
-
-#top-header {
-    width: 100%;
-    /* padding-top: 1rem;
-    padding-bottom: 1rem; */
-    background-color: var(--studio-color2);
-    display: flex;
-    /* flex-direction: column; */
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-}
-
-#studio-logo {
-    height: 10rem;
-    width: auto;
-    margin-bottom: 1rem;
-    margin-left: 5rem;
-    display: block;
-}
-
-#logo {
-    position: relative;
-
-    height: 10rem;
-    width: auto;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-    /* display: block; */
+    padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
     list-style: none;
     margin: 1rem;
 }
 
-#navHeader a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 2rem;
-    transition: color 0.2s ease;
+#studio-logo,
+#logo {
+    height: 10rem;
+    width: auto;
+    margin: 0;
 }
 
-#navHeader a:hover {
-    color: #ff79c6;
+#navHeader a { 
+    color: var(--text); 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 2rem; 
+    transition: color 0.2s ease; 
+}
+
+#navHeader a:hover 
+{ 
+    color: #79ffd0; 
 }
 
 /* MAIN CONTENT */
 
 #main-container {
     min-height: 1200px;
+    margin-top: 4rem;
 }
 
 #logoFirst {
@@ -166,6 +171,9 @@ nav ul li {
     object-fit: cover;
     display: block;
     margin-bottom: 4rem;
+
+    box-shadow: 0 1rem 4rem rgba(0,0,0,0.4);
+    filter: contrast(1.05) saturate(1.1);
 }
 
 figcaption p {
@@ -199,6 +207,10 @@ figcaption p {
 }
 
 /* TEAM CONTENT */
+
+#team {
+    padding-bottom: 4rem;
+}
 
 #our-story {
     font-size: 4rem;
@@ -272,7 +284,7 @@ footer img {
 
 /* Contact Section */
 #contact-section {
-    padding: 2rem 1rem;
+
 }
 
 #contact-section h1 {
@@ -318,11 +330,12 @@ form textarea {
 }
 
 form button {
-    padding: 2rem;
-    font-size: 16px;
+    padding: 1rem;
+    font-size: 1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: .25rem;
     cursor: pointer;
+    color: black;
 }
 
 form button:hover {
