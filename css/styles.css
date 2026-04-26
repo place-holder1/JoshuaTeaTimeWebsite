@@ -9,23 +9,28 @@
     font-family: monospace;
 }
 
+@font-face {
+  font-family: "Stylized";
+  src: url("../fonts/Stylewars2011-aEYg.ttf") format("truetype");
+}
+
 /* PATRICK HAND FONT FROM GOOGLE */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --studio-color: #121212;
     --studio-color2: #2a2a2e;
     --studio-color3: #e0dde1;
     --text:#ffffff;
   }
-}
+} */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Patrick Hand', cursive;
+    font-family: "Stylized", sans-serif;
     color: var(--text);
 }
 
@@ -79,7 +84,7 @@ h2 {
 }
 
 .line-break {
-    height: 4px;
+    height: .25rem;
     width: 100%;
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -174,13 +179,6 @@ nav ul li {
 
     box-shadow: 0 1rem 4rem rgba(0,0,0,0.4);
     filter: contrast(1.05) saturate(1.1);
-}
-
-figcaption p {
-    max-width: 75ch;
-    margin: 2rem auto;
-    line-height: 1.6;
-    font-size: 2rem;
 }
 
 #showText {
