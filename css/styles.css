@@ -4,15 +4,14 @@
     --studio-color3: #474448;
     --text:#000000
 
-    --black-version: #
     --gap: 2rem;
     font-family: monospace;
 }
-
+/* 
 @font-face {
   font-family: "Stylized";
   src: url("../fonts/Stylewars2011-aEYg.ttf") format("truetype");
-}
+} */
 
 /* PATRICK HAND FONT FROM GOOGLE */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
@@ -167,6 +166,17 @@ nav ul li {
 
 #firstThing {
     margin: 2rem;
+}
+
+#video-caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20rem;
+}
+
+#poster {
+    width: 900px;
 }
 
 #video-test video {
