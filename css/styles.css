@@ -101,12 +101,25 @@ h2 {
 /* TOP NAV CONTENT */
 
 #top-header {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+
     width: 100%;
     background-color: var(--studio-color2);
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#top-header.hide {
+    transform: translateY(-100%);
 }
 
 #header-inner {
@@ -172,11 +185,12 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20rem;
+    gap: 10rem;
 }
 
-#poster {
-    width: 900px;
+#poster img {
+    height: 800px;
+    width: 600px;
 }
 
 #video-test video {
